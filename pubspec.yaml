@@ -31,10 +31,22 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+<<<<<<< HEAD
   google_fonts: ^6.3.0
   url_launcher: ^6.3.2
 
 dev_dependencies:
+=======
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+>>>>>>> 6c41c54 (Second Commit)
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
@@ -51,7 +63,11 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+<<<<<<< HEAD
     - assets/MindNest.png
+=======
+    - assets/logo.png
+>>>>>>> 6c41c54 (Second Commit)
     - assets/PDF_UTILITY/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

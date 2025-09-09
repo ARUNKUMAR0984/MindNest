@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:math' as math;
 
@@ -675,4 +676,21 @@ class FooterPatternPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
     return true;
   }
+=======
+
+class Footer extends StatelessWidget {
+  const Footer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      color: Colors.grey[200],
+      child: const Text(
+        "© 2025 Ak MindNest Studio | Built with Flutter Web",
+        textAlign: TextAlign.center,
+      ),
+    );
+  }
+>>>>>>> 6c41c54 (Second Commit)
 }
