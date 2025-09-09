@@ -3,31 +3,26 @@ name: Flutter Web Deploy
 on:
   push:
     branches:
-      - main   # triggers workflow on main branch push
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code
       - uses: actions/checkout@v3
 
-      # Step 2: Install Flutter
-      - name: Setup Flutter
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
+          flutter-version: '3.27.1'   # Specify exact version here
 
-      # Step 3: Get dependencies
-      - name: Get dependencies
+      - name: Install dependencies
         run: flutter pub get
 
-      # Step 4: Build the web app
       - name: Build web
         run: flutter build web --release
 
-      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
